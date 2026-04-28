@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Batch 09 | كلية الجزيرة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="code-canvas"></canvas>
+
+    <nav class="navbar fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="font-black text-xl tracking-tighter">IT <span class="text-blue-500">BATCH 09</span></h1>
+            <div class="hidden md:flex gap-6 font-bold text-sm">
+                <a href="#courses" class="hover:text-blue-400">الكورسات</a>
+                <a href="#apps" class="hover:text-blue-400">التطبيقات</a>
+                <a href="#pdf" class="hover:text-blue-400">المكتبة</a>
+                <a href="#leadership" class="hover:text-blue-400">القيادة</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-28 px-4 max-w-7xl mx-auto">
+        <div class="college-hero-box shadow-xl">
+            <img src="كلية الجزيرة.jpeg" alt="لوحة كلية الجزيرة" class="college-hero-img">
+            <div class="hero-overlay-gradient">
+                <h2 class="text-2xl md:text-4xl font-black mb-2">كلية الجزيرة للعلوم الطبية والتكنولوجيا</h2>
+            </div>
+        </div>
+        
+        <div class="mt-8 p-6 bg-blue-500/5 border border-blue-500/20 rounded-3xl backdrop-blur-sm">
+            <h3 class="text-blue-400 font-black text-lg mb-2">ما هو مجال تقنية المعلومات (IT)؟</h3>
+            <p class="text-gray-300 text-sm leading-relaxed italic">
+                هو العلم الذي يركز على إدارة واستخدام التكنولوجيا لمعالجة المعلومات وتخزينها وحمايتها. في دفعتنا (Batch 09)، لا نتعلم فقط كتابة الأكواد، بل نسعى لابتكار حلول تقنية تدمج بين البرمجة، هندسة الأنظمة، والأمن السيبراني لبناء مستقبل رقمي متطور.
+            </p>
+        </div>
+    </header>
+
+    <main class="relative z-10 px-4 max-w-7xl mx-auto pb-24">
+        
+        <section id="courses" class="py-10">
+            <h2 class="section-title">المسارات التعليمية 📺</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="video-grid"></div>
+        </section>
+
+        <section id="apps" class="py-10 border-t border-white/5">
+            <h2 class="section-title text-indigo-400 border-indigo-400">أدوات وتطبيقات البرمجة 🛠️</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="apps-grid"></div>
+        </section>
+
+        <section id="pdf" class="py-10 border-t border-white/5">
+            <h2 class="section-title text-emerald-400 border-emerald-400">المكتبة الرقمية (PDF) 📚</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="pdf-grid"></div>
+        </section>
+
+        <section id="leadership" class="py-16 bg-slate-900/30 rounded-3xl mt-10">
+            <h2 class="section-title text-center border-none mb-12">قيادة الرابطة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="avatar-ring border-blue-500 shadow-blue-500/20 shadow-lg">
+                        <img src="ali.jpeg" class="avatar-img">
+                    </div>
+                    <h3 class="mt-4 font-bold text-lg">علي مؤتمن</h3>
+                    <p class="text-blue-500 text-xs mb-4">رئيس الرابطة</p>
+                    <a href="https://wa.me/249113313601" class="wa-btn text-xs">واتساب</a>
+                </div>
+
+                <div class="text-center group">
+                    <div class="avatar-ring border-indigo-500 shadow-indigo-500/20 shadow-lg">
+                        <img src="ahmed.jpeg" class="avatar-img">
+                    </div>
+                    <h3 class="mt-4 font-bold text-lg">أحمد قاسم</h3>
+                    <p class="text-indigo-400 text-xs mb-4">الأمين العام</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="avatar-ring border-emerald-500 shadow-emerald-500/20 shadow-lg">
+                        <img src="ahmed bn bila.jpeg" class="avatar-img">
+                    </div>
+                    <h3 class="mt-4 font-bold text-lg">أحمد بن بيلا</h3>
+                    <p class="text-emerald-400 text-xs mb-4">المكتب الإعلامي</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="mobile-bottom-nav md:hidden">
+        <a href="#courses" class="nav-item"><i class="fas fa-play mb-1"></i><br>الكورسات</a>
+        <a href="#apps" class="nav-item"><i class="fas fa-tools mb-1"></i><br>الأدوات</a>
+        <a href="#leadership" class="nav-item"><i class="fas fa-users mb-1"></i><br>القيادة</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
